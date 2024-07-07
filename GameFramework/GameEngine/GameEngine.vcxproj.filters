@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameDeviceDepthstencil.cpp" />
+    <ClCompile Include="GameDeviceFont.cpp" />
+    <ClCompile Include="GameDeviceMaterial.cpp" />
+    <ClCompile Include="GameDeviceMesh.cpp" />
+    <ClCompile Include="GameDeviceRasterizer.cpp" />
+    <ClCompile Include="GameDeviceSampler.cpp" />
+    <ClCompile Include="GameDeviceShader.cpp" />
+    <ClCompile Include="GameActor.cpp" />
+    <ClCompile Include="GameAni.cpp" />
+    <ClCompile Include="GameBlend.cpp" />
+    <ClCompile Include="GameCamera.cpp" />
+    <ClCompile Include="GameColFunc.cpp" />
+    <ClCompile Include="GameComponent.cpp" />
+    <ClCompile Include="GameConstBuffer.cpp" />
+    <ClCompile Include="GameDepthstencil.cpp" />
+    <ClCompile Include="GameDevice.cpp" />
+    <ClCompile Include="GameDeviceBlend.cpp" />
+    <ClCompile Include="GameDeviceBuffer.cpp" />
+    <ClCompile Include="GamePixShader.cpp" />
+    <ClCompile Include="GameRasterizer.cpp" />
+    <ClCompile Include="GameRender.cpp" />
+    <ClCompile Include="GameRenderMgr.cpp" />
+    <ClCompile Include="GameSampler.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GameShader.cpp" />
+    <ClCompile Include="GameSprite.cpp" />
+    <ClCompile Include="GameTexture.cpp" />
+    <ClCompile Include="GameTransform.cpp" />
+    <ClCompile Include="GameVtxBuffer.cpp" />
+    <ClCompile Include="GameVtxShader.cpp" />
+    <ClCompile Include="GameFont.cpp" />
+    <ClCompile Include="GameFrameDebug.cpp" />
+    <ClCompile Include="GameIdxBuffer.cpp" />
+    <ClCompile Include="GameMaterial.cpp" />
+    <ClCompile Include="GameMesh.cpp" />
+    <ClCompile Include="GameVirtualFunc.cpp" />
+    <ClCompile Include="GameCol.cpp" />
+    <ClCompile Include="GameColManager.cpp" />
+    <ClCompile Include="DropItem.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicCom.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuBar.cpp">
+      <Filter>OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCW.cpp">
+      <Filter>RENDER</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMisc.cpp">
+      <Filter>RENDER</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTileBase.cpp">
+      <Filter>RENDER</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTileSub.cpp">
+      <Filter>RENDER</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTree.cpp">
+      <Filter>RENDER</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSprRender.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameActor.h" />
+    <ClInclude Include="GameAni.h" />
+    <ClInclude Include="GameBlend.h" />
+    <ClInclude Include="GameCamera.h" />
+    <ClInclude Include="GameComponent.h" />
+    <ClInclude Include="GameConstBuffer.h" />
+    <ClInclude Include="GameDepthstencil.h" />
+    <ClInclude Include="GameDevice.h" />
+    <ClInclude Include="GameDeviceBuffer.h" />
+    <ClInclude Include="GamePixShader.h" />
+    <ClInclude Include="GameRasterizer.h" />
+    <ClInclude Include="GameRender.h" />
+    <ClInclude Include="GameRenderMgr.h" />
+    <ClInclude Include="GameSampler.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="GameShader.h" />
+    <ClInclude Include="GameSprite.h" />
+    <ClInclude Include="GameTexture.h" />
+    <ClInclude Include="GameTransform.h" />
+    <ClInclude Include="GameVertex.h" />
+    <ClInclude Include="GameVtxBuffer.h" />
+    <ClInclude Include="GameVtxShader.h" />
+    <ClInclude Include="GameFont.h" />
+    <ClInclude Include="GameFrameDebug.h" />
+    <ClInclude Include="GameIdxBuffer.h" />
+    <ClInclude Include="GameMaterial.h" />
+    <ClInclude Include="GameMesh.h" />
+    <ClInclude Include="GameVirtualFunc.h" />
+    <ClInclude Include="GameCol.h" />
+    <ClInclude Include="GameColManager.h" />
+    <ClInclude Include="DropItem.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicCom.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuBar.h">
+      <Filter>OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTree.h">
+      <Filter>RENDER</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCW.h">
+      <Filter>RENDER</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMisc.h">
+      <Filter>RENDER</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTileBase.h">
+      <Filter>RENDER</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTileSub.h">
+      <Filter>RENDER</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSprRender.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="OBJ">
+      <UniqueIdentifier>{e40fbc03-5a7d-411e-b985-56af9a4db58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RENDER">
+      <UniqueIdentifier>{e7fb6afd-2c23-4ef8-a916-0ba241942d63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

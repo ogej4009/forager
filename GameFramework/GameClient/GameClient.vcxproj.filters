@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameMain.cpp" />
+    <ClCompile Include="FrameUpdater.cpp" />
+    <ClCompile Include="Backdrop.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Boar.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="EndScene.cpp">
+      <Filter>SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="MainCam.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Cursor.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Skeleton.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Slime.cpp">
+      <Filter>ACTOR</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScene.cpp">
+      <Filter>SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>SCENE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FrameUpdater.h" />
+    <ClInclude Include="Backdrop.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Boar.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="EndScene.h">
+      <Filter>SCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="MainCam.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Slime.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Skeleton.h">
+      <Filter>ACTOR</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>SCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScene.h">
+      <Filter>SCENE</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SCENE">
+      <UniqueIdentifier>{2390efde-8d05-45d6-88d7-dfb4a43be0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ACTOR">
+      <UniqueIdentifier>{31d1bb86-d9b7-4f6a-a1f6-f5f4cea98b1e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
