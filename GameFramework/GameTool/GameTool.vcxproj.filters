@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="VIEW">
+      <UniqueIdentifier>{bf3f7ea0-febb-4893-8d48-5c0efcb324f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APP">
+      <UniqueIdentifier>{d7ff1d1c-27ac-467f-8018-716ef307e30d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TOOL">
+      <UniqueIdentifier>{16222811-38cb-4261-81a1-2e814ce59119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLG">
+      <UniqueIdentifier>{8bfa1a7c-0f34-4853-b3e5-929e061f4b5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LView.h">
+      <Filter>VIEW</Filter>
+    </ClInclude>
+    <ClInclude Include="RView.h">
+      <Filter>VIEW</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolProgress.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="MapSceneCom.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>TOOL</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTool.h">
+      <Filter>TOOL</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>TOOL</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>TOOL</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>TOOL</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>TOOL</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>TOOL</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuDlg.h">
+      <Filter>DLG</Filter>
+    </ClInclude>
+    <ClInclude Include="RightDlg.h">
+      <Filter>DLG</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LView.cpp">
+      <Filter>VIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="RView.cpp">
+      <Filter>VIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolProgress.cpp">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="MapSceneCom.cpp">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTool.cpp">
+      <Filter>TOOL</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>TOOL</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>TOOL</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>TOOL</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuDlg.cpp">
+      <Filter>DLG</Filter>
+    </ClCompile>
+    <ClCompile Include="RightDlg.cpp">
+      <Filter>DLG</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameTool.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\GameTool.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\GameTool.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
