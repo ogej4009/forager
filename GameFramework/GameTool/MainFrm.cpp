@@ -55,8 +55,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	m_SP.CreateStatic(this, 1, 2);
 
-	m_SP.CreateView(0, 0, RUNTIME_CLASS(LView), SIZE{ 1280,720 }, nullptr);
-	m_SP.CreateView(0, 1, RUNTIME_CLASS(RView), SIZE{ 500,0 }, nullptr);
+	m_SP.CreateView(0, 0, RUNTIME_CLASS(LView), SIZE{ 1280, 720 }, nullptr);
+	m_SP.CreateView(0, 1, RUNTIME_CLASS(RView), SIZE{ 500, 0 }, nullptr);
 
 
 	// 프레임의 클라이언트 영역을 차지하는 뷰를 만듭니다.
@@ -79,9 +79,9 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	// TODO: CREATESTRUCT cs를 수정하여 여기에서
 	//  Window 클래스 또는 스타일을 수정합니다.
 
-	cs.style = WS_OVERLAPPED | WS_CAPTION | FWS_ADDTOTITLE
-		;
-
+	//cs.style = WS_OVERLAPPED | WS_CAPTION | FWS_ADDTOTITLE
+	//	;
+	cs.hMenu = nullptr;
 	cs.dwExStyle &= ~WS_EX_CLIENTEDGE;
 	cs.lpszClass = AfxRegisterWndClass(0);
 	return TRUE;
@@ -107,14 +107,14 @@ void CMainFrame::Dump(CDumpContext& dc) const
 void CMainFrame::OnSetFocus(CWnd* /*pOldWnd*/)
 {
 	// 뷰 창으로 포커스를 이동합니다.
-	m_wndView.SetFocus();
+	//m_wndView.SetFocus();
 }
 
 BOOL CMainFrame::OnCmdMsg(UINT nID, int nCode, void* pExtra, AFX_CMDHANDLERINFO* pHandlerInfo)
 {
 	// 뷰에서 첫째 크랙이 해당 명령에 나타나도록 합니다.
-	if (m_wndView.OnCmdMsg(nID, nCode, pExtra, pHandlerInfo))
-		return TRUE;
+	//if (m_wndView.OnCmdMsg(nID, nCode, pExtra, pHandlerInfo))
+	//	return TRUE;
 
 	// 그렇지 않으면 기본 처리합니다.
 	return CFrameWnd::OnCmdMsg(nID, nCode, pExtra, pHandlerInfo);
@@ -130,7 +130,7 @@ void AdminSpWin::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
 
-	CSplitterWnd::OnLButtonDown(nFlags, point);
+	//CSplitterWnd::OnLButtonDown(nFlags, point);
 }
 
 
@@ -138,6 +138,6 @@ void AdminSpWin::OnMouseMove(UINT nFlags, CPoint point)
 {
 	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
 
-	CSplitterWnd::OnMouseMove(nFlags, point);
+	//CSplitterWnd::OnMouseMove(nFlags, point);
 }
 

@@ -57,7 +57,7 @@ int RView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	// TODO:  여기에 특수화된 작성 코드를 추가합니다.
 
-	NewDlg.Create(IDD_RView, this);
+	NewDlg.Create(IDD_RightDlg, this);
 	NewDlg.ShowWindow(SW_SHOW);
 
 	return 0;

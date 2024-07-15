@@ -3,7 +3,7 @@
 //
 
 #pragma once
-#include "ChildView.h"
+
 
 #include "LView.h"
 #include "RView.h"
@@ -55,7 +55,7 @@ public:
 	virtual void Dump(CDumpContext& dc) const;
 #endif
 
-	CChildView    m_wndView;
+	//CChildView    m_wndView;
 
 	AdminSpWin	m_SP;
 	RView* m_RV;

@@ -22,21 +22,11 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 
-	/*
-	afx_msg void OnLbnSelchangeMapobjlist();
-	afx_msg void OnBnClickedSavebtn();
-	afx_msg void OnBnClickedLoadbtn();
-	afx_msg void OnBnClickedClearbtn();
-	CListBox mapObjList;
-	virtual BOOL OnInitDialog();
-	*/
-
 public:
 	afx_msg void OnLbnSelchangeRightdlglist();
 	afx_msg void OnBnClickedSavebutton();
 	afx_msg void OnBnClickedLoadbutton();
 	afx_msg void OnBnClickedClearbutton();
 	CListBox m_MenuDlgListCtrl;
-	CString m_MenuDlgListValue;
 	virtual BOOL OnInitDialog();
 };

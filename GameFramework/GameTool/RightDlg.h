@@ -16,30 +16,34 @@ public:
 
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_RightDlg };
+	enum { IDD = IDD_RightDlg };	
 #endif
 
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
 
+	DECLARE_MESSAGE_MAP()
 public:
 	std::vector<CDialogEx*> ArrDlg;
+
 
 public:
 	template<typename T>
 	void TCreateDlg(unsigned int _ID)
 	{
 		T* NewDlg = new T();
-		NewDlg->Create(_ID, &TabMenu);
+		NewDlg->Create(_ID, &m_CTabCtrl1);
 		NewDlg->ShowWindow(SW_HIDE);
 		NewDlg->SetBackgroundColor(RGB(200, 200, 200));
 		NewDlg->SetWindowPos(nullptr, 4, 20, 500, 500, 0);
 		ArrDlg.push_back(NewDlg);
 	}
 
-	CTabCtrl m_ToolMenuTab;
-	afx_msg void OnTcnSelchangeToolmenutab(NMHDR* pNMHDR, LRESULT* pResult);
+
 	virtual BOOL OnInitDialog();
 	virtual BOOL PreTranslateMessage(MSG* pMsg);
-	DECLARE_MESSAGE_MAP()
+	
+
+	afx_msg void OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult);
+	CTabCtrl m_CTabCtrl1;
 };

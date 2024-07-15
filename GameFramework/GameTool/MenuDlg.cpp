@@ -20,7 +20,7 @@ IMPLEMENT_DYNAMIC(MenuDlg, CDialogEx)
 
 MenuDlg::MenuDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_MenuDlg, pParent)
-	, m_MenuDlgListValue(_T(""))
+
 {
 
 }
@@ -33,7 +33,6 @@ void MenuDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_MENUDLGLIST, m_MenuDlgListCtrl);
-	DDX_LBString(pDX, IDC_MENUDLGLIST, m_MenuDlgListValue);
 }
 
 
@@ -125,9 +124,6 @@ void MenuDlg::OnLbnSelchangeRightdlglist()
 	{
 		CMapSceneCom::m_TileSetIdx = 16;
 	}
-	
-	
-	
 	
 	UpdateData(FALSE);
 }

@@ -193,7 +193,6 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ChildView.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameTool.h" />
     <ClInclude Include="LView.h" />
@@ -208,7 +207,6 @@
     <ClInclude Include="ToolProgress.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChildView.cpp" />
     <ClCompile Include="GameTool.cpp" />
     <ClCompile Include="LView.cpp" />
     <ClCompile Include="MainFrm.cpp" />

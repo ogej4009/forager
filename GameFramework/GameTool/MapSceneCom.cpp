@@ -49,7 +49,7 @@ void CMapSceneCom::Loading()
 
 
 	GameDirectory m_Dir;
-	m_Dir.MoveParent(L"GameFramework");
+	m_Dir.MoveParent(L"GameFramework"); // 
 	m_Dir.Move(L"Res");
 	m_Dir.Move(L"Tex");
 	m_Dir.Move(L"Tile");
@@ -93,11 +93,12 @@ void CMapSceneCom::Loading()
 	//CMapTreeCreate::Loading();
 
 	{
-		S_Ptr<GameActor> PTR = CreateActor();
-		PTR->Trans()->WPOS({ 0.0f,0.0f,-10.0f });
-		MapCam = PTR->AddCom<GameCamera>(10, RENDER_ORDER::RO_LEVEL
-			, RENDER_ORDER::RO_PLAYER
-			, RENDER_ORDER::RO_MONSTER);
+		S_Ptr<GameActor> PTR = CreateActor(L"MainCam");
+		PTR->Trans()->WPOS({ 0.0f, 0.0f, -10.0f });
+		MapCam = PTR->AddCom<GameCamera>(10
+			, (UINT)RENDER_ORDER::RO_LEVEL
+			, (UINT)RENDER_ORDER::RO_PLAYER
+			, (UINT)RENDER_ORDER::RO_MONSTER);
 		MapCam->Size(LogicData::ScreenSize);
 	}
 
